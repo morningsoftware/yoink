@@ -13,19 +13,19 @@ UAC = User Access Control
         - List hostname/domain.
         - List IP.
         - List information about service creation events.
-            - Creation date.
-            - Service name.
-            - Binary path.
+            1. Creation date.
+            2. Service name.
+            3. Binary path.
         - List information about password change events.
-            - Computer name.
-            - User name.
-            - Password change date.
+            1. Computer name.
+            2. User name.
+            3. Password change date.
         - List information about share access events.
-            - Share name.
-            - Username accessing the share.
-            - IP.
-            - Access Mask.
-            - Event time.
+            1. Share name.
+            2. Username accessing the share.
+            3. IP.
+            4. Access Mask.
+            5. Event time.
     DisableFWTask.ps1 - Disable FWRevert. (defined in FWALL.ps1)
     FWALL.ps1 ($Dispatcher, $Localnetwork, $Notnats) - Set Firewall Rules.
         - Export current firewall config.
@@ -148,14 +148,14 @@ UAC = User Access Control
     TestPort.ps1 ($IP, $Port, $Timeout, $Verbose) - Check if TCP Port is Open.
     Usr.ps1 ($UserPassword, $AdminPassword, $Exclude) - Change User Passwords.
         - If $UserPassowrd == "YOLO", GeneratePassword().
-            - If secondary DC, skip password reset.
-            - Else, if primary DC:
+            1. If secondary DC, skip password reset.
+            2. Else, if primary DC:
                 - Handles user ttuccdc (would need to change to efscccdc?), checking if it exists, settings password, and adding to groups. (Admin, Remote Desktop, Domain Admin)
                 - Retrieves all AD users and changes passwords. (Skip if in $Exclude)
-            - Else, if not DC:
+            3. Else, if not DC:
                 - Change passwords of local users. (Skip if in $Exclude)
                 - Check for user ttuccdc, if not, create it, set password, and add to groups.
-            - Results logged in $CSVArray and outputted.
+            4. Results logged in $CSVArray and outputted.
     Wazuh.ps1 ($Manager, $RegistrationPassword) - Install Wazuh and Run.
         - If installer located at $DownloadPath, install Wazuh agent silently (msiexec), and pass manager IP/hostname, as well as RegistrationPassword if provided.
         - Set WazuhSvc to start automatically.
@@ -175,7 +175,7 @@ UAC = User Access Control
     postprocessing.ps1 ($InventoryFolder, $Extension) - Compare Outputs
         - Search for files with specific extension in specified folder.
         - Extract data between "start" and "end" lines of given text. e.g., start = "#### Start IP ####".
-            - Parse Host data, IP, DNS, IIS, DC, Users, Group Members, Start Features, Registry Startups, Scheduled tasks, etc.
+            1. Parse Host data, IP, DNS, IIS, DC, Users, Group Members, Start Features, Registry Startups, Scheduled tasks, etc.
         - Compares data between outputs.
     > Bins
         Reset-KrbTgt-Password-For-RWDCs-And-RODCs.ps1 - Self Explanatory.
