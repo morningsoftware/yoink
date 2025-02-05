@@ -1,4 +1,4 @@
-SC = Server Core
+```SC = Server Core
 DC = Domain Controller
 WinRM = Windows Remote Management
 RDP = Remote Desktop
