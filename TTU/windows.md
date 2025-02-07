@@ -6,7 +6,7 @@ GPO: Group Policy Object
 LSAAS: Local Security Authority Subsystem Service
 ASR: Attack Surface Reduction
 IIS: Internet Information Services
-UAC: User Access Control```
+UAC: User Access Control
 
 /WINDOWS
 
