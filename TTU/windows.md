@@ -1,14 +1,14 @@
-```SC: Server Core
-DC: Domain Controller
-WinRM: Windows Remote Management
-RDP: Remote Desktop
-GPO: Group Policy Object
-LSAAS: Local Security Authority Subsystem Service
-ASR: Attack Surface Reduction
-IIS: Internet Information Services
-UAC: User Access Control
+    SC: Server Core
+    DC: Domain Controller
+    WinRM: Windows Remote Management
+    RDP: Remote Desktop
+    GPO: Group Policy Object
+    LSAAS: Local Security Authority Subsystem Service
+    ASR: Attack Surface Reduction
+    IIS: Internet Information Services
+    UAC: User Access Control
 
-/WINDOWS
+### /WINDOWS
 
     Comp.ps1 - List System Events.
 
