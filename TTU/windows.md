@@ -351,7 +351,7 @@
       [EXAMPLE]:
           .\postprocessing.ps1 -InventoryFolder "C:\path\to\files" -Extension "txt"
 
-    /BINS
+/WINDOWS/BINS
 
         Reset-KrbTgt-Password-For-RWDCs-And-RODCs.ps1 - Self Explanatory.
 
